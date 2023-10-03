@@ -1,10 +1,11 @@
 body{
-    background: linear-gradient(to top, rgb(136, 104, 144), rgb(14, 43, 71));
+    /* background: linear-gradient(to top, rgb(136, 104, 144), rgb(14, 43, 71)); */
     margin:0;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
+/* ----------------------------------------------------------- */
+/* Barre de naviguation */
 .nav-bar{
     background-color: rgb(0, 0, 0);
     padding-top:20px;
@@ -12,26 +13,75 @@ body{
     border-bottom: solid;
     border-width: 1px;
     border-color: white;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 58% 40%;
     height: 40px;
     width: 100%;
 }
+/* ----------------------------------------------------------- */
+/* Partie gauche */
 
-.nav-bar>div{
+.nav-bar>.nav-bar-left-side{
+    order:2;
+    /* background-color: aqua; */
+    height: inherit;
+}
+
+.nav-bar>.nav-bar-left-side>div{
     width: 80px;  
     padding: 10px;
     text-align: center;
+    display: inline-flex;
+    align-items:  center;
 }
 
-.nav-bar>div:hover{
+.nav-bar-left-side>div:hover{
     background-color: rgba(255, 255, 255, 0.157);
     border-radius: 10px;  
 }
 
-
-a{
+.nav-bar>.nav-bar-left-side>div>a{
     text-decoration: none;
     color:rgb(255, 255, 255);
     font-size: 15px;
 }
+
+/* ----------------------------------------------------------- */
+/* Partie droite */
+.nav-bar>.nav-bar-right-side{
+    order:1;
+    padding-bottom: 0;
+    /* background-color: aqua; */
+    height: inherit;
+    
+}
+
+.nav-bar>.nav-bar-right-side>div>p{
+    color: white;
+    height: 30px;
+    margin: 0px;
+    padding-left: 50px;
+    padding-top: 5px;   
+    vertical-align: middle;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* Image de l'araigné */
+
+.araigne{
+    position: absolute;
+    top:-20px;
+    left:100px;  
+    z-index: -1;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
