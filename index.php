@@ -1,6 +1,8 @@
 <?php
 
-$mysqli = mysqli_connect("localhost","root","WxcvWsd1A2Z3erM898*-","db");
+include 'credentials.php';
+
+$mysqli = mysqli_connect("localhost", $USERNAME, $PASSWORD, $DB_NAME);
 
 if(!$mysqli){
     echo mysqli_connet_error();

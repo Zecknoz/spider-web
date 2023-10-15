@@ -8,14 +8,13 @@ body{
 /* Barre de naviguation */
 .nav-bar{
     background-color: rgb(0, 0, 0);
-    padding-top:20px;
     gap:20px;
     border-bottom: solid;
     border-width: 1px;
     border-color: white;
     display: grid;
     grid-template-columns: 58% 40%;
-    height: 40px;
+    height: 50px;
     width: 100%;
 }
 /* ----------------------------------------------------------- */
@@ -25,6 +24,7 @@ body{
     order:2;
     /* background-color: aqua; */
     height: inherit;
+    padding-top: 8px;
 }
 
 .nav-bar>.nav-bar-left-side>div{
@@ -53,6 +53,8 @@ body{
     padding-bottom: 0;
     /* background-color: aqua; */
     height: inherit;
+    padding-top: 8px;
+    
     
 }
 
@@ -74,10 +76,43 @@ body{
     position: absolute;
     top:-20px;
     left:100px;  
-    z-index: -1;
+    z-index: 0;
+    pointer-events: none;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------- */
+
+.website-description{
+    display: grid;
+    background-color: rgb(34, 95, 74);
+    grid-auto-columns: 10vw;
+    grid-auto-rows: 10vh;
+    height: 200vh;
+}
+
+.rond{
+    background-color: red;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.first-block{
+    /* background-color: bisque; */
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    
+}
+
+.first-block>h1{
+    margin: 0;
+    text-align: left;
+    font-size: 7vw;
+    
+}
 
 
 
